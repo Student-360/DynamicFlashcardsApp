@@ -6,7 +6,7 @@
 - Flashcard that presents the user with a trivia question and when interacted with (clicked) is flipped and presents the answer to said question to the user.
 
 ### App Walk-though
-<img src="<iframe src="https://giphy.com/embed/TlCIFYGqO6RU2TALQG" width="244" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/TlCIFYGqO6RU2TALQG">via GIPHY</a></p>" width=200><br>
+<iframe src="https://giphy.com/embed/TlCIFYGqO6RU2TALQG" width="244" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/TlCIFYGqO6RU2TALQG">via GIPHY</a></p>
 
 ## Required
 - [X] Create New Project in Android Studio
