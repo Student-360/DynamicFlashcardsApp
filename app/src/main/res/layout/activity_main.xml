@@ -22,5 +22,29 @@
         android:textSize="40sp"
         android:visibility="gone"/>
 
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp" />
+
+    <ImageView
+        android:id="@+id/flashcard_add_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp" />
+
+
+
 </RelativeLayout>
+
+
+
+
 
