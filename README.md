@@ -4,11 +4,15 @@
 
 ### App Description
 
-- Flashcard that presents the user with a trivia question and when interacted with (clicked) is flipped and presents the answer of said question to the user. New feature allows for user to create their very own personalized flashcard.
+Flashcard that presents the user with a trivia question and when interacted with (clicked) is flipped and presents the answer of said question to the user. New feature allows for user to create their very own personalized flashcard.
 
 ### App Walk-though
 
 ![Alt Text](https://media.giphy.com/media/Wet60piHbHq4nL1cwd/giphy.gif)
+
+(Unable to upload the entirety of the the app functionality in a gif and so have attached a full walkthrough is viewable in the following link)
+https://user-images.githubusercontent.com/91206272/159100558-658b733e-7e45-4d70-a566-8c6c3d51ef3f.mp4
+
 
 ## Required
 - [X] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
@@ -24,7 +28,7 @@
 - [ ] User can also enter multiple choice answers when creating a card
 - [ ] App is further styled and customized!
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Lab 1
 
