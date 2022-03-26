@@ -40,6 +40,16 @@
         android:layout_alignParentRight="true"
         android:layout_margin="25dp" />
 
+    <ImageView
+        android:id="@+id/flashcard_next_card_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@id/flashcard_add_question_button"
+        android:layout_margin="0dp" />
+
 
 
 </RelativeLayout>

@@ -16,7 +16,8 @@ public class AddCardActivity extends AppCompatActivity {
 
         findViewById(R.id.flashcard_cancel_button).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 finish();
             }
         });
@@ -36,3 +37,5 @@ public class AddCardActivity extends AppCompatActivity {
         });
     }
 }
+
+

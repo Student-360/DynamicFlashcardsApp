@@ -14,10 +14,18 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     TextView questionTextView;
     TextView answerTextView;
+
+    FlashcardDatabase flashcardDatabase;
+    List<Flashcard> allFlashcards;
+    int cardIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +34,20 @@ public class MainActivity extends AppCompatActivity {
 
         questionTextView = findViewById(R.id.flashcard_question);
         answerTextView = findViewById(R.id.flashcard_answer);
+        
         questionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 questionTextView.setVisibility(View.INVISIBLE);
                 answerTextView.setVisibility(View.VISIBLE);
+            }
+        });
+
+        answerTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                questionTextView.setVisibility(View.VISIBLE);
+                answerTextView.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -41,6 +58,39 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
                // startActivity(intent);
                 startActivityForResult(intent, 100);
+            }
+        });
+
+        flashcardDatabase = new FlashcardDatabase(getApplicationContext());
+        allFlashcards = flashcardDatabase.getAllCards();
+
+        if (allFlashcards != null && allFlashcards.size() > 0)
+        {
+            Flashcard firstCard = allFlashcards.get(0);
+            questionTextView.setText(firstCard.getQuestion());
+            answerTextView.setText(firstCard.getAnswer());
+        }
+
+        findViewById(R.id.flashcard_next_card_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+             cardIndex+=1;
+
+                questionTextView.setVisibility(View.VISIBLE);
+                answerTextView.setVisibility(View.INVISIBLE);
+
+                if(cardIndex >= allFlashcards.size()) {
+                    Snackbar.make(view,
+                            "You've reached the end of the cards, going back to start.",
+                            Snackbar.LENGTH_SHORT)
+                            .show();
+                    cardIndex = 0;
+                }
+
+             Flashcard currentCard = allFlashcards.get(cardIndex);
+             questionTextView.setText(currentCard.getQuestion());
+             answerTextView.setText(currentCard.getAnswer());
             }
         });
     }
@@ -54,6 +104,11 @@ public class MainActivity extends AppCompatActivity {
                 String answerString = data.getExtras().getString("ANSWER_KEY");
                 questionTextView.setText(questionString);
                 answerTextView.setText(answerString);
+
+               Flashcard flashcard = new Flashcard(questionString, answerString);
+               flashcardDatabase.insertCard(flashcard);
+
+               allFlashcards = flashcardDatabase.getAllCards();
             }
         }
 
