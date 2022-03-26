@@ -4,12 +4,9 @@
 Dynamic flashcard which grants the user the ability to create new personalized flashcards, and has the functionailty to save flashcard data in databases allowing for persistent access.
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
-
 
 (Unable to upload the entirety of the the app functionality in a gif and so have attached a full walkthrough is viewable in the following link -- Please search following link in search engine (google) for file to appear)
 https://user-images.githubusercontent.com/91206272/160224352-1f076145-c782-4765-a150-5074464470fe.mp4
-
 
 ## Required
 - [X] User can create a card and still see their created card when the app is relaunched.
@@ -20,7 +17,6 @@ https://user-images.githubusercontent.com/91206272/160224352-1f076145-c782-4765-
 - [ ] Flashcards are shown in random order instead of the order they were created in
 - [ ] User can edit a card and see the edit saved when they browse through their deck of cards
 - [ ] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
-
 
 
 ## DynamicFlashcardsApp
