@@ -1,7 +1,11 @@
 ## DynamicFlashcardsApp
 
+- Dynamic Flashcards (Java, Gradle, Room, SQL, Git/Github) Mobile Application Development
+ Created a mobile application wherein users can create and browse custom flashcards that were saved to a dynamic database for data persistence. Designed a customized UI with snackbar notifications and developed user stories which later implemented into a working build. Collaborated with teammates and utilized version control for seamless development and release.
+
+
 ### App Progress
-Creation and implementation of transitions.
+- Creation and implementation of transitions.
 
 ### App Walk-though
 
