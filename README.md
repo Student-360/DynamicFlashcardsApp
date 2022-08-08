@@ -14,7 +14,6 @@ Creation and implementation of transitions.
 
 ### App Walk-though
 
-(Unable to upload the entirety of the the app functionality in a gif and so have attached a full walkthrough is viewable in the following link -- Please search following link in search engine (google) for file to appear)
 https://user-images.githubusercontent.com/91206272/160224352-1f076145-c782-4765-a150-5074464470fe.mp4
 
 ### App Progress
@@ -25,7 +24,6 @@ https://user-images.githubusercontent.com/91206272/160224352-1f076145-c782-4765-
 
 ![Alt Text](https://media.giphy.com/media/Wet60piHbHq4nL1cwd/giphy.gif)
 
-(Unable to upload the entirety of the the app functionality in a gif and so have attached a full walkthrough is viewable in the following link)
 https://user-images.githubusercontent.com/91206272/159100558-658b733e-7e45-4d70-a566-8c6c3d51ef3f.mp4
 
 
